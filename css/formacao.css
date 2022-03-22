@@ -1,0 +1,186 @@
+.formacao {
+  background-color: #141414;
+  color: #FFF;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  padding: 100px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px; 
+  position: relative;
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 104px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+}
+
+.formacao .subtitulo {
+  color: #000;
+}
+
+.formacao-texto {
+  font-size: 1.87rem;
+  line-height: 1.33;
+  max-width: 45ch;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #CCC;  
+}
+
+.formacao-texto strong {
+  color: #F5F5F5;
+}
+
+.curso-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 0px;
+}
+
+.curso-lista ul li:hover {
+  color: #F99FB3;
+}
+
+.meus-cursos {
+  display: flex;
+  flex: 1;
+  flex-direction: column; 
+  background-color: #090909;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px; 
+}
+
+.curso {
+  color: #A3A3A3;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.curso-lista li {
+  flex: 1;
+  position: relative;
+  font-weight: bold;
+  line-height: 1.4;
+  font-size: 1.12rem;
+  color: #FFF;
+  margin-bottom: 10px;   
+}
+
+.meus-cursos::before{
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#7FD9F0, #F99FB3);
+  position: relative;
+  left: -24px; 
+}
+
+.curso-instituição {
+  color: #A3A3A3;
+  text-transform: uppercase;
+  margin-bottom: -5px;
+  margin-top: 20px;
+}
+
+.idiomas {
+  margin-top: 60px;  
+}
+
+.idiomas span {
+  color: #A3A3A3;
+}
+
+.idiomas-titulo {
+  font-size: 1.12rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #CCC;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.idiomas-titulo::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/language.svg) no-repeat center;
+  position: absolute;
+  left: -36px;
+  top: -5px;
+}
+
+/*=================== RESPONSIVIDADE ===========================*/
+@media (max-width: 900px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 20px;
+  }
+  .formacao .subtitulo {
+    color: #fff;
+    font-size: 3rem;
+    word-break: keep-all;
+  }
+  .formacao-texto {
+    font-size: 1.5rem;
+  }
+  .idiomas-titulo::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+  .formacao-container::after {
+    width: 50px;
+    height: 10px;
+    left: 20px;
+    bottom: -5px;
+  } 
+}
+
+@media (max-width: 700px) {
+  .formacao-texto {
+    font-size: 1.5rem;
+  }
+  .curso {
+    font-size: 0.75rem;
+  }
+  .curso-lista li {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  .formacao-container::after {
+    width: 30px;
+    height: 10px;
+    left: 20px;
+    bottom: -5px;
+  } 
+}
+
+@media (max-width: 600px) {
+  .meus-cursos {
+    display: grid;
+    grid-template-columns: 200px;  
+  }
+  .curso {
+    font-size: 1rem;
+  }
+  .curso-lista li {
+    font-size: 1rem;
+  }
+}

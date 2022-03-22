@@ -1,0 +1,76 @@
+.footer {
+  background-color: #000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  padding: 100px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 250px;
+  align-items: center; 
+}
+
+.footer-texto {
+  font-size: 1.87rem;
+  color: #F5F5F5;
+  line-height: 1.33;
+}
+
+.footer-contato li {
+  display: flex;
+  gap: 15px;
+  align-items: left;
+  font-weight: bold;
+  font-size: 1.87rem;
+  color: #f5f5f5;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.footer li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #A3A3A3;
+}
+
+/*======================== RESPONSIVIDADE =====================*/
+@media (max-width:900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+  .footer-texto {
+    font-size: 1.5rem;
+  }
+  .footer-contato li {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width:600px) {
+  .footer-texto {
+    margin-top: -50px;
+    font-size: 1.3rem;
+   
+  }
+  .footer-contato li {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-container .footer-imagem {
+    width: 20px;
+    height: 20px;
+  }
+}

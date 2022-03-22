@@ -1,0 +1,45 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1, h2, h3, p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch;
+}
+
+/*============================== RESPONSIVIDADE =================================*/
+@media (max-width: 1000px) {
+  .subtitulo {
+    font-size: 6rem;
+    margin-top: 15px;
+}
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
