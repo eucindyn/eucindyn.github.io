@@ -47,10 +47,6 @@
   margin-bottom: 0px;
 }
 
-.curso-lista ul li:hover {
-  color: #F99FB3;
-}
-
 .meus-cursos {
   display: flex;
   flex: 1;
